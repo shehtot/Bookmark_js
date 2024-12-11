@@ -1,0 +1,54 @@
+*::selection{
+    background-color: #FEC260;
+}
+body{
+    background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: #352e28;
+    line-height: 60px;
+}
+h1::before{
+    content: '';
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    height: 1.2rem;
+    width:100%;
+    bottom: 0.7rem;
+    background-color:#FEC260 ;
+    z-index: -1;
+   display: block;
+    transition: height 0.4s;
+}
+h1:hover::before{
+    height: 2.3rem;
+}
+.inner-bookmark{
+    
+    border-width: 3px 0;
+    border-style:dotted;
+    border-color: #352E28;
+}
+th {
+    padding: 0.5rem 0.5rem;
+}
+td{
+    padding: 1rem 0;
+}
+#updata{
+    display: none;
+}
+
+#fixedBox{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+}
